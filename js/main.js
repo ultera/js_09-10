@@ -5,27 +5,29 @@ $(function() {
   var $checkBox = $('.js-cbox');
   var $switch = $('#css-toggle');
 
-  var $links = $('.holder');
 
   /* DROP-DOWN MENU */
-  $('a').on('click', function(e){
+  $('a').on('click', function(e) {
     e.preventDefault();
   });
 
-  $links.hover(function () {
-	$('ul', this).css({  'backgroundColor': 'rgba(56,56,56,0.9)'});
+  $('.holder').hover(function () {
+    var $ul = $('ul', this);
+	  $ul.attr('backgroundColor', 'rgba(56,56,56,0.9)');
     clearTimeout($.data(this,'timer'));
-    $('ul', this).stop(true, true).slideDown(200);
-    $('ul', this).animate({ 'backgroundColor': 'rgba(21,159,227,0.8)' }, 'slow');
+    ($ul)
+      .stop(true, true).slideDown(200)
+      .animate({ 'backgroundColor': 'rgba(21,159,227,0.8)' }, 'slow');
   }, function () {
-    $.data(this,'timer', setTimeout($.proxy(function() {
-      $('ul', this).stop(true, true).slideUp(2);
-    }, this), 1));
-	  $('ul', this).animate({  'backgroundColor': 'rgba(56,56,56,0.9)'}, 1);
+      var $ul = $('ul', this);
+      $.data(this,'timer', setTimeout($.proxy(function() {
+        $ul.stop(true, true).slideUp(2);
+      }, this), 1));
+  	  $ul.animate({'backgroundColor': 'rgba(56,56,56,0.9)'}, 1);
   });
 
   /* CHECK-BOXES */
-  $checkBox.mousedown(function() {
+  $checkBox.on('click', function() {
     changeCheck($(this));
   });
 
@@ -33,11 +35,6 @@ $(function() {
     $checkBox.each( function() {
       changeCheck($(this));
     });
-  });
-
-  $checkBox.each(
-    function() {
-      changeCheck($(this));
   });
 
 });
