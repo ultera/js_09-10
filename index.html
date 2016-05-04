@@ -4,105 +4,103 @@
 	<meta charset="UTF-8">
 	<title>js 09-10</title>
 	<link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="css/style.css" media="all">
-    <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/jcarousel.connected-carousels.css">
-
-    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
-    <script type="text/javascript" src="js/jquery.color.js"></script>
-    <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
-    <script type="text/javascript" src="js/jcarousel.connected-carousels.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/jcarousel.connected-carousels.css">
+  <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.color.js"></script>
+  <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+  <script type="text/javascript" src="js/jcarousel.connected-carousels.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="header">
 			<div class="menu-container">
-                <ul class="menu">
-                             <li class="menu-item"><a href="">home</a></li>
-                             <li class="menu-item"><a href="">about</a></li>
-                             <li class="menu-item holder">
-                                <a href="">Lorem</a>
-                                <ul class="submenu">
-                                    <li class="submenu-item"><a href="">voluptate</a></li>
-                                    <li class="submenu-item"><a href="">officia</a></li>
-                                    <li class="submenu-item"><a href="">magnam</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item holder"><a href="">aliquid</a>
-                                <ul class="submenu">
-                                    <li class="submenu-item"><a href="">voluptate</a></li>
-                                    <li class="submenu-item"><a href="">rem</a></li>
-                                    <li class="submenu-item"><a href="">officia</a></li>
-                                    <li class="submenu-item"><a href="">dolor sit</a></li>
-                                    <li class="submenu-item"><a href="">magnam</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="">contacts</a></li>
-                </ul>
-            </div>
+        <ul class="menu">
+	        <li class="menu-item"><a href="">home</a></li>
+	        <li class="menu-item"><a href="">about</a></li>
+	        <li class="menu-item holder">
+            <a href="">Lorem &darr;</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="">voluptate</a></li>
+              <li class="submenu-item"><a href="">officia</a></li>
+              <li class="submenu-item"><a href="">magnam</a></li>
+            </ul>
+	        </li>
+	        <li class="menu-item holder"><a href="">aliquid &darr;</a>
+            <ul class="submenu">
+              <li class="submenu-item"><a href="">voluptate</a></li>
+              <li class="submenu-item"><a href="">rem</a></li>
+              <li class="submenu-item"><a href="">officia</a></li>
+              <li class="submenu-item"><a href="">dolor sit</a></li>
+              <li class="submenu-item"><a href="">magnam</a></li>
+            </ul>
+	        </li>
+	        <li class="menu-item"><a href="">contacts</a></li>
+        </ul>
+      </div>
 			<div class="logo">jCarousel</div>
-            <div class="logo-desc">.limitedEdition</div>
+      <div class="logo-desc">.limitedEdition</div>
 		</div>
 		<div class="my-main">
-            <div class="connected-carousels">
-                <div class="stage">
-                    <div class="carousel carousel-stage">
-                        <ul>
-                            <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
-                            <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
-                        </ul>
-                    </div>
-                    <p class="photo-credits">
-                        Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
-                    </p>
-                    <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
-                    <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
-                </div>
-                <div class="navigation">
-                    <a href="#" class="prev prev-navigation">&lsaquo;</a>
-                    <a href="#" class="next next-navigation">&rsaquo;</a>
-                    <div class="carousel carousel-navigation">
-                        <ul>
-                            <li><img src="img/img1_thumb.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="img/img2_thumb.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="img/img3_thumb.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="img/img4_thumb.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="img/img5_thumb.jpg" width="50" height="50" alt=""></li>
-                            <li><img src="img/img6_thumb.jpg" width="50" height="50" alt=""></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-			<div class="aside">
-				<div class="inline">
-    				<select ID="cd-dropdown" class="intro-select-osx">
-    					<option selected>or this</option>
-    					<option>OS X like selects</option>
-    					<option>crossbrowser</option>
-    				</select>
-                </div>
-                <div class="js-container">
-                    <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">HTML</span></p>
-                    <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">CSS</span></p>
-                    <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">JavaScript</span></p>
-                    <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">jQuery</span></p>
-                    <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">Ajax</span></p>
-                    <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">e.t.c.</span></p>
-                </div>
-                <div class="css-container">
-                    <input id="css-toggle" class="css-cbox" type="checkbox" >
-                    <label for="css-toggle"></label>
-                </div>
-		</div>
+      <div class="connected-carousels">
+        <div class="stage">
+          <div class="carousel carousel-stage">
+            <ul>
+                <li><img src="img/img1.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img2.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img3.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img4.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img5.jpg" width="600" height="400" alt=""></li>
+                <li><img src="img/img6.jpg" width="600" height="400" alt=""></li>
+            </ul>
+          </div>
+            <p class="photo-credits">
+              Photos by <a href="http://www.mw-fotografie.de">Marc Wiegelmann</a>
+            </p>
+            <a href="#" class="prev prev-stage"><span>&lsaquo;</span></a>
+            <a href="#" class="next next-stage"><span>&rsaquo;</span></a>
+        </div>
+        <div class="navigation">
+          <a href="#" class="prev prev-navigation">&lsaquo;</a>
+          <a href="#" class="next next-navigation">&rsaquo;</a>
+          <div class="carousel carousel-navigation">
+            <ul>
+              <li><img src="img/img1_thumb.jpg" width="50" height="50" alt=""></li>
+              <li><img src="img/img2_thumb.jpg" width="50" height="50" alt=""></li>
+              <li><img src="img/img3_thumb.jpg" width="50" height="50" alt=""></li>
+              <li><img src="img/img4_thumb.jpg" width="50" height="50" alt=""></li>
+              <li><img src="img/img5_thumb.jpg" width="50" height="50" alt=""></li>
+              <li><img src="img/img6_thumb.jpg" width="50" height="50" alt=""></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+		<div class="aside">
+			<div class="inline">
+				<select ID="cd-dropdown" class="intro-select-osx">
+					<option selected>or this</option>
+					<option>OS X like selects</option>
+					<option>crossbrowser</option>
+				</select>
+      </div>
+      <div class="js-container">
+        <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">HTML</span></p>
+        <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">CSS</span></p>
+        <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">JavaScript</span></p>
+        <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">jQuery</span></p>
+        <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">Ajax</span></p>
+        <p><span class="js-cbox"><input type="checkbox" name="cb1" checked="false">e.t.c.</span></p>
+      </div>
+      <div class="css-container">
+        <input id="css-toggle" class="css-cbox" type="checkbox" >
+        <label for="css-toggle"></label>
+      </div>
 	</div>
-    <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
-    <script type="text/javascript" src="js/jquery.dropdown.js"></script>
-    <script type="text/javascript" src="js/jquery.dropdown-init.js"></script>
+	</div>
+  <script type="text/javascript" src="js/modernizr.custom.63321.js"></script>
+  <script type="text/javascript" src="js/jquery.dropdown.js"></script>
+  <script type="text/javascript" src="js/jquery.dropdown-init.js"></script>
 </body>
 </html>
